@@ -1,0 +1,15 @@
+<view>
+    <form bindsubmit="bindFormSubmit" class="container">
+        <view class="textarea-box">
+            <textarea 
+            placeholder="请开始你的表演~~~"
+             value='{{inputText}}' 
+             maxlength="-1" 
+             name="textarea" 
+             adjust-position="true"
+             confirm-type="return"
+             />
+        </view>
+        <button class="button" form-type="submit">发送</button>
+    </form>
+</view>

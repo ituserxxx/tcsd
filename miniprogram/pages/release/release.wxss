@@ -1,0 +1,33 @@
+/* pages/release/release.wxss */
+.container{
+    background-color: darkslategrey;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textarea-box{
+    width: 80vw;
+    height: 55vh;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.textarea-box textarea{
+    flex: 1;
+    color: #666;
+    display: block;
+    width: auto;
+}
+.button{
+    transform: translateY(30px);
+    background: linear-gradient(90deg,#ea71d6  0%, #9555f5 100%);
+    width: auto;
+    height: 80rpx;
+    border-radius: 80rpx;
+    color: #fff;
+    font-weight: inherit;
+}

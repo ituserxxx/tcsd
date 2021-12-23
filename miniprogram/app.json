@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/release/release",
+
+    "pages/square/square",
+    "pages/user_home/user_home"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/release/release",
+        "text": "吐槽"
+      },
+      {
+        "pagePath":  "pages/square/square",
+        "text": "江湖"
+      },
+      
+      {
+        "pagePath": "pages/user_home/user_home",
+        "text": "个人中心"
+      }
+    ],
+    "borderStyle": "white",
+    "backgroundColor": "#F5F5F5"
+  }
+}
