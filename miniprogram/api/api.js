@@ -18,10 +18,20 @@ const upUserPostSet = data => {
 const postCreate = data => {
     return request({data:data,url:http+'/post/create'})
 };
+// 吐槽列表
+const postList = data => {
+    return request({data:data,url:http+'/post/list'})
+};
 
+// 点赞
+const giveLove = data => {
+    return request({data:data,url:http+'/post/give_love'})
+};
 module.exports = {
     userLogin,
     postCreate,
     userUpdateInfo,
-    upUserPostSet
+    upUserPostSet,
+    postList,
+    giveLove
 }

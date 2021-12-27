@@ -1,43 +1,56 @@
-<view class="list-wrapper">
-  <view class="list-item" wx:for="{{ 3 }}" wx:key="index">
-    <!-- header wrapper -->
-    <view class="header flex">
-      <view class="flex">
-        <image class="avatar" src="https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLSJtDianQEKRCDKwafl4AVALswR6LGk40mphYfYHe4XD4xXLHs7zTBv4Q2EiadXjAeQ0WnuQCT7tkg/132" />
-        <view>
-          <view class="name text-cut">名字</view>
-          <text class="tip text-cut">随便写写</text>
+<wxs src="./tool.wxs" module="SquareTool"></wxs>
+<view class="post">
+  <view class="list-wrapper">
+    <view class="list-item" wx:for="{{ post_list }}" wx:key="index" wx:for-item="item">
+      <!-- header wrapper -->
+      <view class="header flex">
+        <view class="flex">
+          <image class="avatar" src="{{item.master_info.avatar_url}}" />
+          <view>
+            <view class="name text-cut">{{item.master_info.nick_name}}</view>
+            <!-- <text class="tip text-cut">随便写写</text> -->
+          </view>
         </view>
+        <!-- operate icon -->
+        <text class="iconfonts icon_gengduo" wx:if="{{ isPostMaster(item.master_info.id) }}" />
       </view>
-      <!-- operate icon -->
-      <text class="iconfonts icon_gengduo" />
-    </view>
-    <!-- title wrapper -->
-    <view class="title-wrapper">
+      <!-- title wrapper -->
+      <!-- <view class="title-wrapper">
       <text class="iconfonts icon_lujing2" />
       <text class="title">随便写写随便写写随便写写随便写写随便写写随便写写随便写写</text>
-    </view>
-    <!-- main wrapper -->
-    <view class="main-wrapper">
-      <view class="content">学习</view>
-      <view class="image-wrapper">
-        <image wx:for="{{4}}" wx:key="index" class="image" src="https://qny2-daka.zhunzha.com/XZZCZBAV1640401578093210" mode="aspectFill" />
+    </view> -->
+      <!-- main wrapper -->
+      <view class="main-wrapper">
+        <view class="content">{{SquareTool.subContent(item.post_info.content)}}</view>
+        <!-- <view class="image-wrapper">
+        <image wx:for="{{ item.post_info.img_url }}" wx:key="index" wx:for-item="item_img" class="image" src="{{item_img}}" mode="aspectFill" />
+      </view> -->
       </view>
-    </view>
-    <!-- footer wrapper -->
-    <view class="footer-wrapper flex">
-      30个人看过
-      <view class="operate-wrapper flex">
-        <view class="operate-item flex">
-          <text class="iconfonts icon_praise"></text>
-        </view>
-        <view class="operate-item flex">
+      <!-- footer wrapper -->
+      <view class="footer-wrapper flex">
+        {{item.post_info.love_sum}}人点赞
+        <view class="operate-wrapper flex">
+          <view class="operate-item flex" bindtap="giveLove" data-post_id="{{ item.post_info.id }}">
+            <text class="iconfonts {{ item.post_info.is_give_love ? 'icon_praise_1' : 'icon_praise'}}"></text>
+          </view>
+          <!-- <view class="operate-item flex">
           <text class="iconfonts icon_comment"></text>
-        </view>
-        <view class="operate-item flex">
-          <text class="iconfonts icon_share"></text>
+        </view> -->
+          <!-- <view class="operate-item flex" bindtap="sharePost" data-post_id="{{ item.post_info.id }}">
+            <text class="iconfonts icon_share"></text>
+          </view> -->
         </view>
       </view>
     </view>
   </view>
 </view>
+<van-toast id="van-toast" />
+
+<van-share-sheet
+  show="{{ show_share }}"
+  options="{{ share_options }}"
+  title="你想分享到哪里呢？？？"
+  description=""
+  bind:click-overlay="close_share"
+  bind:close="close_share"
+/>

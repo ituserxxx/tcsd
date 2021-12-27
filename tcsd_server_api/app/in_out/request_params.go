@@ -28,7 +28,16 @@ type CreatePostReq struct {
 	Context     string `json:"context" v:"required"`
 }
 
-type HomePostReq struct {
+type PostListReq struct {
 	UID  int `json:"uid" v:"required"`
-	Page int `json:"page"`
+	Page int `json:"page" d:"1"`
+}
+type PostDetailReq struct {
+	UID  int `json:"uid" v:"required"`
+	PostId int `json:"post_id" v:"required"`
+}
+
+type GiveLoveReq struct {
+	UID  int `json:"uid" v:"required"`
+	PostId int `json:"post_id" v:"required"`
 }

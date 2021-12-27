@@ -31,7 +31,12 @@ Page({
       Toast("还是随便敲几个字符吧~~")
       return
     } else {
-      this.pushPost()
+      var isRe = app.preventActive(()=>{
+        this.pushPost()
+      })
+      if (isRe){
+        Toast(isRe)
+      }
     }
   },
   think_some: function (e) {

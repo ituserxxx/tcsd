@@ -1,8 +1,7 @@
 {
   "navigationBarTitleText": "江湖",
   "usingComponents": {
-    "van-image": "@vant/weapp/image/index",
-    "van-cell": "@vant/weapp/cell/index",
-    "van-cell-group": "@vant/weapp/cell-group/index"
+    "van-toast": "@vant/weapp/toast/index",
+    "van-share-sheet": "@vant/weapp/share-sheet/index"
   }
 }

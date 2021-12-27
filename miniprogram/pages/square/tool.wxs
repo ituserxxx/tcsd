@@ -1,0 +1,11 @@
+
+var subContent = function(con){
+    if(con.length >100){
+        return con.substring(0,100)+"..."
+    }
+    return con
+}
+
+module.exports={
+    subContent:subContent
+}

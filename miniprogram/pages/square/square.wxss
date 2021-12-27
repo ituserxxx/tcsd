@@ -1,3 +1,6 @@
+.post{
+  background-color: darkslategrey;
+}
 .flex {
   display: flex;
   align-items: center;
@@ -7,6 +10,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  
 }
 
 page {

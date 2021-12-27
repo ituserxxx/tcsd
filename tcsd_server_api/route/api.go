@@ -17,7 +17,8 @@ func init() {
 		group.ALL("/user/update", api.User.UpdateUserInfo)
 		group.ALL("/user/update/set", api.User.UpdateUserSet)
 		group.ALL("/post/create", api.Post.CreatePost)
-		group.ALL("/post/list", api.Post.HomePostList)
+		group.ALL("/post/list", api.Post.PostList)
+		group.ALL("/post/give_love", api.Post.GiveLove)
 	})
 
 }
