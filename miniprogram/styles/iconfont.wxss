@@ -1,0 +1,486 @@
+@font-face {
+  font-family: "iconfonts"; /* Project id 1716845 */
+  src: url('//at.alicdn.com/t/font_1716845_umkik19qio.woff2?t=1624008520468') format('woff2'),
+       url('//at.alicdn.com/t/font_1716845_umkik19qio.woff?t=1624008520468') format('woff'),
+       url('//at.alicdn.com/t/font_1716845_umkik19qio.ttf?t=1624008520468') format('truetype');
+}
+
+.iconfonts {
+  font-family: "iconfonts" !important;
+  font-size: 16rpx;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon_bianzu23:before {
+  content: "\e67a";
+}
+
+.icon_fuwupingjia-kefu:before {
+  content: "\e686";
+}
+
+.icon_bianzu2:before {
+  content: "\e672";
+}
+
+.icon_bianzu:before {
+  content: "\e673";
+}
+
+.icon_tuoyan:before {
+  content: "\e675";
+}
+
+.icon_tongyong:before {
+  content: "\e676";
+}
+
+.icon_dushu:before {
+  content: "\e677";
+}
+
+.icon_xuexi:before {
+  content: "\e678";
+}
+
+.icon_jianfei:before {
+  content: "\e679";
+}
+
+.icon_lujing21:before {
+  content: "\e670";
+}
+
+.icon_henggang:before {
+  content: "\e671";
+}
+
+.icon_wanshang:before {
+  content: "\e66c";
+}
+
+.icon_zaoshang:before {
+  content: "\e66f";
+}
+
+.icon_jiazai:before {
+  content: "\e65a";
+}
+
+.icon_xingzhuang:before {
+  content: "\e66b";
+}
+
+.icon_lujing2:before {
+  content: "\e66a";
+}
+
+.icon_xiangji:before {
+  content: "\e659";
+}
+
+.icon_home:before {
+  content: "\e658";
+}
+
+.icon_loading:before {
+  content: "\e6a6";
+}
+
+.icon_xingzhuangjiehe:before {
+  content: "\e668";
+}
+
+.icon_1:before {
+  content: "\e669";
+}
+
+.icon_tianxie1:before {
+  content: "\e667";
+}
+
+.icon_lujing1:before {
+  content: "\e666";
+}
+
+.icon_pinglun:before {
+  content: "\e663";
+}
+
+.icon_dianzan:before {
+  content: "\e665";
+}
+
+.icon_mubiao:before {
+  content: "\e661";
+}
+
+.icon_weiguan:before {
+  content: "\e662";
+}
+
+.icon_wancheng:before {
+  content: "\e660";
+}
+
+.icon_tongzhi:before {
+  content: "\e65f";
+}
+
+.icon_tianxie:before {
+  content: "\e65e";
+}
+
+.icon_iconfontxuanzhong:before {
+  content: "\e654";
+}
+
+.icon_weixin1:before {
+  content: "\e65c";
+}
+
+.icon_baocun:before {
+  content: "\e65d";
+}
+
+.icon_heart:before {
+  content: "\e66d";
+}
+
+.icon_packet:before {
+  content: "\e66e";
+}
+
+.icon_rotate:before {
+  content: "\e645";
+}
+
+.icon_target_cover:before {
+  content: "\e656";
+}
+
+.icon_target_label:before {
+  content: "\e657";
+}
+
+.icon_task_label:before {
+  content: "\e648";
+}
+
+.icon_more:before {
+  content: "\e63b";
+}
+
+.icon_bo_fang:before {
+  content: "\e653";
+}
+
+.icon_zanting:before {
+  content: "\e601";
+}
+
+.icon_shiting:before {
+  content: "\e602";
+}
+
+.icon_shanchu:before {
+  content: "\e60a";
+}
+
+.icon_quanzi:before {
+  content: "\e60b";
+}
+
+.icon_bianji:before {
+  content: "\e64c";
+}
+
+.icon_shenqing:before {
+  content: "\e60c";
+}
+
+.icon_sanjiao:before {
+  content: "\e60d";
+}
+
+.icon_gengduo:before {
+  content: "\e60e";
+}
+
+.icon_wanshanziliao:before {
+  content: "\e64d";
+}
+
+.icon_shangla:before {
+  content: "\e614";
+}
+
+.icon_xiala:before {
+  content: "\e617";
+}
+
+.icon_dianzan-wei:before {
+  content: "\e64e";
+}
+
+.icon_dianzan-yi:before {
+  content: "\e64f";
+}
+
+.icon_jia:before {
+  content: "\e649";
+}
+
+.icon_sousuo:before {
+  content: "\e650";
+}
+
+.icon_tupian:before {
+  content: "\e651";
+}
+
+.icon_dizhi:before {
+  content: "\e64a";
+}
+
+.icon_wentifankui:before {
+  content: "\e64b";
+}
+
+.icon_zan_ting:before {
+  content: "\e652";
+}
+
+.icon_xing:before {
+  content: "\e63e";
+}
+
+.icon_back:before {
+  content: "\e63f";
+}
+
+.icon_add_wrong:before {
+  content: "\e640";
+}
+
+.icon_add_success:before {
+  content: "\e641";
+}
+
+.icon_add_text:before {
+  content: "\e642";
+}
+
+.icon_draw:before {
+  content: "\e643";
+}
+
+.icon_remark:before {
+  content: "\e644";
+}
+
+.icon_eraser:before {
+  content: "\e646";
+}
+
+.icon_calendar:before {
+  content: "\e647";
+}
+
+.icon_weixin:before {
+  content: "\e63d";
+}
+
+.icon_message:before {
+  content: "\e606";
+}
+
+.icon_mine:before {
+  content: "\e607";
+}
+
+.icon_search:before {
+  content: "\e608";
+}
+
+.icon_logo:before {
+  content: "\e609";
+}
+
+.icon_praise:before {
+  content: "\e60f";
+}
+
+.icon_comment:before {
+  content: "\e616";
+}
+
+.icon_share:before {
+  content: "\e618";
+}
+
+.icon_ranking:before {
+  content: "\e610";
+}
+
+.icon_setting:before {
+  content: "\e611";
+}
+
+.icon_notice:before {
+  content: "\e612";
+}
+
+.icon_task:before {
+  content: "\e613";
+}
+
+.icon_update:before {
+  content: "\e615";
+}
+
+.icon_right_2:before {
+  content: "\e61b";
+}
+
+.icon_add_2:before {
+  content: "\e619";
+}
+
+.icon_left:before {
+  content: "\e61a";
+}
+
+.icon_circle_share:before {
+  content: "\e61c";
+}
+
+.icon_invite:before {
+  content: "\e61d";
+}
+
+.icon_menu:before {
+  content: "\e61e";
+}
+
+.icon_praise_1:before {
+  content: "\e61f";
+}
+
+.icon_img_2:before {
+  content: "\e620";
+}
+
+.icon_tv:before {
+  content: "\e622";
+}
+
+.icon_voice_2:before {
+  content: "\e621";
+}
+
+.icon_addr:before {
+  content: "\e623";
+}
+
+.icon_pause:before {
+  content: "\e624";
+}
+
+.icon_play:before {
+  content: "\e625";
+}
+
+.icon_circle_add:before {
+  content: "\e626";
+}
+
+.icon_lock_1:before {
+  content: "\e627";
+}
+
+.icon_lock:before {
+  content: "\e628";
+}
+
+.icon_right:before {
+  content: "\e629";
+}
+
+.icon_delete_1:before {
+  content: "\e62b";
+}
+
+.icon_delete:before {
+  content: "\e62a";
+}
+
+.icon_open:before {
+  content: "\e62c";
+}
+
+.icon_close:before {
+  content: "\e62d";
+}
+
+.icon_add:before {
+  content: "\e62e";
+}
+
+.icon_file:before {
+  content: "\e62f";
+}
+
+.icon_text:before {
+  content: "\e630";
+}
+
+.icon_move_up:before {
+  content: "\e631";
+}
+
+.icon_move_down:before {
+  content: "\e632";
+}
+
+.icon_circle_delete:before {
+  content: "\e633";
+}
+
+.icon_img:before {
+  content: "\e634";
+}
+
+.icon_voice:before {
+  content: "\e635";
+}
+
+.icon_help:before {
+  content: "\e636";
+}
+
+.icon_back_top:before {
+  content: "\e637";
+}
+
+.icon_open_1:before {
+  content: "\e638";
+}
+
+.icon_edit:before {
+  content: "\e639";
+}
+
+.icon_success:before {
+  content: "\e63a";
+}
+
+.icon_selectd:before {
+  content: "\e63c";
+}
+
+.icon_voice_3:before {
+  content: "\e63e";
+}

@@ -1,4 +1,43 @@
-<view class="post" wx:for="{{post_list}}" wx:for-item='item' wx:for-index="index" wx:key='id'>
-  <van-image round width="4rem" height="4rem" src="{{item.avatar_url}}" />
-  <text>{{item.nickname}}</text>
+<view class="list-wrapper">
+  <view class="list-item" wx:for="{{ 3 }}" wx:key="index">
+    <!-- header wrapper -->
+    <view class="header flex">
+      <view class="flex">
+        <image class="avatar" src="https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLSJtDianQEKRCDKwafl4AVALswR6LGk40mphYfYHe4XD4xXLHs7zTBv4Q2EiadXjAeQ0WnuQCT7tkg/132" />
+        <view>
+          <view class="name text-cut">名字</view>
+          <text class="tip text-cut">随便写写</text>
+        </view>
+      </view>
+      <!-- operate icon -->
+      <text class="iconfonts icon_gengduo" />
+    </view>
+    <!-- title wrapper -->
+    <view class="title-wrapper">
+      <text class="iconfonts icon_lujing2" />
+      <text class="title">随便写写随便写写随便写写随便写写随便写写随便写写随便写写</text>
+    </view>
+    <!-- main wrapper -->
+    <view class="main-wrapper">
+      <view class="content">学习</view>
+      <view class="image-wrapper">
+        <image wx:for="{{4}}" wx:key="index" class="image" src="https://qny2-daka.zhunzha.com/XZZCZBAV1640401578093210" mode="aspectFill" />
+      </view>
+    </view>
+    <!-- footer wrapper -->
+    <view class="footer-wrapper flex">
+      30个人看过
+      <view class="operate-wrapper flex">
+        <view class="operate-item flex">
+          <text class="iconfonts icon_praise"></text>
+        </view>
+        <view class="operate-item flex">
+          <text class="iconfonts icon_comment"></text>
+        </view>
+        <view class="operate-item flex">
+          <text class="iconfonts icon_share"></text>
+        </view>
+      </view>
+    </view>
+  </view>
 </view>
