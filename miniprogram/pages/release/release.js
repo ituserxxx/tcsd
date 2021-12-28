@@ -23,11 +23,13 @@ Page({
     // if (!app.globalData.isAuth){
     //     this.upUserInfo()
     // }else 
-    if (app.globalData.postaSum == 0) {
-      this.setData({
-        show_switch: true,
-      })
-    } else if (this.isNull(this.ltrim(e.detail.value.textarea))) {
+    //这段逻辑是设置选择项
+    // if (app.globalData.postaSum == 0) {
+    //   this.setData({
+    //     show_switch: true,
+    //   })
+    // } else 
+    if (this.isNull(this.ltrim(e.detail.value.textarea))) {
       Toast("还是随便敲几个字符吧~~")
       return
     } else {
