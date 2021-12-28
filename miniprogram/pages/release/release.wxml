@@ -1,37 +1,25 @@
 <view>
     <form bindsubmit="bindFormSubmit" class="container">
         <view class="textarea-box">
-            <textarea 
-            placeholder="{{placeholder}}"
-             value='{{content}}' 
-             maxlength="-1" 
-             name="textarea" 
-             adjust-position="true"
-             confirm-type="return"
-             />
+            <textarea placeholder="{{placeholder}}" value='{{content}}' maxlength="-1" name="textarea" adjust-position="true" confirm-type="return" />
         </view>
-        <van-action-sheet 
-            class="sheet_con" 
-            show="{{ show_switch }}"
-            title="发布设置" 
-            bind:close="clonse_switch" 
-            bind:click-overlay="think_some" 
-            close-on-click-overlay="{{false}}" 
-            overlay="{{false}}" 
-         >
+        <van-action-sheet class="sheet_con" show="{{ show_switch }}" title="发布设置" bind:close="clonse_switch" bind:click-overlay="think_some" close-on-click-overlay="{{false}}" overlay="{{false}}">
             <van-cell center title="是否匿名发布">
-                <van-switch checked="{{IsAnonymous}}" bind:change="selct_IsAnonymous"  slot="right-icon" size="24" />
+                <van-switch checked="{{IsAnonymous}}" bind:change="selct_IsAnonymous" slot="right-icon" size="24" />
             </van-cell>
             <van-cell center title="是否发布到江湖">
-                <van-switch  checked="{{IsSquare}}"  bind:change="selct_IsSquare" name="IsSquare"  slot="right-icon" size="24" />
+                <van-switch checked="{{IsSquare}}" bind:change="selct_IsSquare" name="IsSquare" slot="right-icon" size="24" />
             </van-cell>
         </van-action-sheet>
         <block wx:if="{{isAuth}}">
             <button class="button" form-type="submit">发送</button>
         </block>
         <block wx:if="{{!isAuth}}">
-            <button  class="button" open-type="getUserInfo" bindtap="upUserInfo"> 授权发布 </button>
+            <button class="button" open-type="getUserInfo" bindtap="upUserInfo"> 点击授权</button>
         </block>
+        <van-tabbar wx:if="{{true}}" bind:change="find_some">
+            <van-tabbar-item icon="search">发现国度</van-tabbar-item>
+        </van-tabbar>
     </form>
 </view>
 <van-toast id="van-toast" />

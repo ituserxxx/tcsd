@@ -8,7 +8,7 @@ Page({
     IsAnonymous: true,
     IsSquare: true,
     show_switch: false,
-    isAuth: true,
+    isAuth: false,
 
   },
   onLoad() {
@@ -20,11 +20,12 @@ Page({
     this.setData({
       content: e.detail.value.textarea
     })
+    // 这段是授权逻辑
     // if (!app.globalData.isAuth){
     //     this.upUserInfo()
-    // }else 
+    // }
     //这段逻辑是设置选择项
-    // if (app.globalData.postaSum == 0) {
+    // else  if (app.globalData.postaSum == 0) {
     //   this.setData({
     //     show_switch: true,
     //   })
@@ -41,8 +42,12 @@ Page({
       }
     }
   },
+
   think_some: function (e) {
     return
+  },
+  find_some: function(e){
+    //发现国度-》跳转到列表
   },
   pushPost: function () {
     var data = {
